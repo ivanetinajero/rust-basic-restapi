@@ -1,0 +1,18 @@
+
+### read user
+GET http://localhost:8080/api/users/42
+Content-Type: application/json
+
+
+### read users paginated
+GET http://localhost:8080/api/users?page=0&page_size=15
+Content-Type: application/json
+
+### create user
+POST http://localhost:8080/api/users
+Content-Type: application/json
+
+{
+    "name": "John Doe",
+    "username": "johndoe"
+}
