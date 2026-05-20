@@ -14,7 +14,5 @@ pub struct CreateUserParams {
 
 #[derive(Serialize)]
 pub struct UserCreated {
-    pub id: u32,
-    pub name: String,
-    pub username: String
+    pub id: u32
 }
