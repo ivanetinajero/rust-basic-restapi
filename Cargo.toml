@@ -3,6 +3,9 @@ name = "ejemplo_web"
 version = "0.1.0"
 edition = "2024"
 
+[workspace]
+members = ["migration"]
+
 [dependencies]
 tokio = { version = "1.52.3", features = ["rt-multi-thread", "macros", "net"] }
 axum = {version = "0.8.9"}
