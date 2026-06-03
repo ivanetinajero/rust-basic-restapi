@@ -1,0 +1,25 @@
+- Install `sea-orm-cli`
+    $ cargo install sea-orm-cli
+
+- List all available migration commands that are supported by `sea-orm-cli`
+    $ sea-orm-cli migrate -h 
+
+- Initialize the migration folder:
+    $ sea-orm-cli migrate init
+
+The folder structure will be as follows:
+.
+├── Cargo.toml
+├── migration
+│   ├── Cargo.toml
+│   ├── README.md
+│   └── src
+│       ├── lib.rs
+│       ├── m20220101_000001_create_table.rs
+│       └── main.rs
+└── src
+    └── main.rs
+
+- Apply pending migrations
+    $ sea-orm-cli migrate up
+
